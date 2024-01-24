@@ -29,33 +29,33 @@
 # print(result)
 # print(value)
 
+# Q
+def find_average_marks(marks):
+    sum_marks=sum(marks)
+    total_subject=len(marks)
+    average_marks=sum_marks/total_subject
 
-# def find_average_marks(marks):
-#     sum_marks=sum(marks)
-#     total_subject=len(marks)
-#     average_marks=sum_marks/total_subject
+    return average_marks
 
-#     return average_marks
+def find_grade(average_marks):
+    if average_marks>=80:
+        grade="A"
+    elif average_marks>=60:
+        grade="B"
+    elif average_marks>=50:
+        grade="C"
+    else:
+        grade="Fail"
 
-# def find_grade(average_marks):
-#     if average_marks>=80:
-#         grade="A"
-#     elif average_marks>=60:
-#         grade="B"
-#     elif average_marks>=50:
-#         grade="C"
-#     else:
-#         grade="Fail"
+    return grade
 
-#     return grade
+marks=[0,50,75,49,81]
 
-# marks=[0,50,75,49,81]
+average_marks=find_average_marks(marks)
+grade=find_grade(average_marks)
 
-# average_marks=find_average_marks(marks)
-# grade=find_grade(average_marks)
-
-# print(average_marks)
-# print(grade)
+print(average_marks)
+print(grade)
 
 
 
@@ -97,12 +97,12 @@
 
 # (**kwargs) # any number  of keywoerd argument 
 # (*args) #any number of argument 
-def name_of(*args):
-    print(args)
-    return args 
-# if return is not called then it will return nothing as come in none in result
-c=name_of(1,2,3,"abc")
-print(c)
+# def name_of(*args):
+#     print(args)
+#     return args 
+# # if return is not called then it will return nothing as come in none in result
+# c=name_of(1,2,3,"abc")
+# print(c)
 
 
 # def num(*args,**kwargs):
