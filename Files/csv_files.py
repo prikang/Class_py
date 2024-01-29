@@ -22,7 +22,7 @@ def ask_user_input():
     return name,email
 
 write_header()
-for i  in range(5):
+for i in range(5):
     name,email = ask_user_input()
     save_to_csv_file(name,email)
 
@@ -33,3 +33,4 @@ for i  in range(5):
 #             print(data)
 
 # read_csv()
+    
