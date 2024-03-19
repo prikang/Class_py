@@ -1,15 +1,15 @@
-class vechile:
-    def __init__(self):  #int = constructor
-     print("Called")
+# class vechile:
+#     def __init__(self):  #int = constructor
+#      print("Called")
 
-truck= vechile()
+# truck= vechile()
 
 class People:
     def __init__(self, age): #__repr__ __str__. magic dember menthod
         self.age = age
 
     def under_16(self):
-        self.hello()
+        # self.hello()
         if self.age<16:
             return True
         return False

@@ -1,6 +1,6 @@
 import csv
 
-with open("files/stock_data.csv", "r") as mero_file:
+with open("class/files/stock_data.csv", "r") as mero_file:
     reader = csv.DictReader(mero_file)
     companies=[]
     for row in reader:
@@ -23,6 +23,9 @@ class People:
         return False
 
 obj1 = People(age=15)
+
+
+
 result = obj1.under_16()
 
 print(result)
